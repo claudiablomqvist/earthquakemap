@@ -9,32 +9,32 @@ function allMonth() {
     }
     
     //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. Vi döper källan till
-    //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. Se mitt dokument jag bifogat
-    //för länk till info om detta.
+    //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. 
+    
     map.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson'
     });
     
     
-    //Lägger till cirklar som representerar datan vi anropr i addSource. Se dokumentet jag bifogat för en länk
-    //Med info om just denna funktion.
+    //Lägger till cirklar som representerar datan vi anropr i addSource. 
+    
     map.addLayer({
         'id': 'earthquake', //Ger den samma id som addSource (valfritt)
         'type': 'circle', //Typ av representation för data vi har i vårt geojson objekt (i detta fall jordbävningar)
         'source': 'earthquake', //Här länkar vi till addSource med namn "earthquake"
-        'paint': { //Hur cirklarna skall se ut, valde en bra default här, ni kan ju ändra hur ni vill
+        'paint': { //Hur cirklarna skall se ut
             
-            //Har länkat i dokument om hur dessa radius-color-opacity fungerar.
+            
             'circle-radius': {
-                'property': 'mag', //Gör cirklarna större om man zoomar ut, detta är ju en smaksak.
+                'property': 'mag', //Gör cirklarna större om man zoomar ut, smaksak.
                 'stops': [
                 [0, 5], //Detta innebär att om zoom är 0 så blir radius 5px
                 [6, 20] //Detta innebär att om zoom är 6 så blir radius 20px
                 ]
             },
             
-            'circle-color': { //Färgen skiftar mellan gul--->röd detta är ju en smaksak men tycker det ser bra ut.
+            'circle-color': { //Färgen skiftar mellan gul--->röd 
                 'property': 'mag', //Porperty mag bestämmer att det är storleken som bestämmar färgen.
                 'stops': [
                 [0, 'yellow'], //Storlek 0 är gul
@@ -61,8 +61,7 @@ function lastWeek() {
     }
 
     //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. Vi döper källan till
-    //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. Se mitt dokument jag bifogat
-    //för länk till info om detta.
+    //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. 
     map.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson'
@@ -112,16 +111,15 @@ function lastDay() {
         map.removeSource("earthquake");
     }
 
-    //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. Vi döper källan till
-    //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. Se mitt dokument jag bifogat
-    //för länk till info om detta.
+    //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. 
+    //Detta id används sen i map.addLayer för att anropa rätt källa. 
     map.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson'
     });
     
     
-    //Lägger till cirklar som representerar datan vi anropr i addSource. Se dokumentet jag bifogat för en länk
+    //Lägger till cirklar som representerar datan vi anropr i addSource. 
     //Med info om just denna funktion.
     map.addLayer({
         'id': 'earthquake', //Ger den samma id som addSource (valfritt)
@@ -129,7 +127,7 @@ function lastDay() {
         'source': 'earthquake', //Här länkar vi till addSource med namn "earthquake"
         'paint': { //Hur cirklarna skall se ut, valde en bra default här, ni kan ju ändra hur ni vill
             
-            //Har länkat i dokument om hur dessa radius-color-opacity fungerar.
+            
             'circle-radius': {
                 'property': 'mag', //Gör cirklarna större om man zoomar ut, detta är ju en smaksak.
                 'stops': [
@@ -165,32 +163,30 @@ function lastHour() {
     }
 
     //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. Vi döper källan till
-    //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. Se mitt dokument jag bifogat
-    //för länk till info om detta.
+    //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. 
     map.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson'
     });
     
     
-    //Lägger till cirklar som representerar datan vi anropr i addSource. Se dokumentet jag bifogat för en länk
-    //Med info om just denna funktion.
+    //Lägger till cirklar som representerar datan vi anropr i addSource. 
     map.addLayer({
         'id': 'earthquake', //Ger den samma id som addSource (valfritt)
         'type': 'circle', //Typ av representation för data vi har i vårt geojson objekt (i detta fall jordbävningar)
         'source': 'earthquake', //Här länkar vi till addSource med namn "earthquake"
-        'paint': { //Hur cirklarna skall se ut, valde en bra default här, ni kan ju ändra hur ni vill
+        'paint': { //Hur cirklarna skall se ut
             
             //Har länkat i dokument om hur dessa radius-color-opacity fungerar.
             'circle-radius': {
-                'property': 'mag', //Gör cirklarna större om man zoomar ut, detta är ju en smaksak.
+                'property': 'mag', //Gör cirklarna större om man zoomar ut
                 'stops': [
                 [0, 5], //Detta innebär att om zoom är 0 så blir radius 5px
                 [6, 20] //Detta innebär att om zoom är 6 så blir radius 20px
                 ]
             },
             
-            'circle-color': { //Färgen skiftar mellan gul--->röd detta är ju en smaksak men tycker det ser bra ut.
+            'circle-color': { //Färgen skiftar mellan gul--->röd 
                 'property': 'mag', //Porperty mag bestämmer att det är storleken som bestämmar färgen.
                 'stops': [
                 [0, 'yellow'], //Storlek 0 är gul
