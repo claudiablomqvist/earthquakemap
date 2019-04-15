@@ -1,0 +1,35 @@
+<html>
+<header>
+    <meta charset="UTF-8">
+    <title>Jordbävningar i världen</title>
+    <!--Länkar till MapBox GL JS bibliotek + css-->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet"/>
+    <!--Länkar till den egna css-filen-->
+    <link rel="stylesheet" type="text/css" href="myStyle.css">
+</header>
+
+<body>
+
+    <!--Div som innehåller sidans banner(titel)-->
+    <div class="banner">Jordbävningskarta</div>
+    <!--Div som innehåller knapparna(menyn)-->
+    <div class="btn-group" style="width:100%">
+        <button onclick="allMonth()" style="width:25%">Jordbävningar senaste 30 dagarna</button>
+        <button onclick="lastWeek()" style="width:25%">Jordbävningar senaste 7 dagarna</button>
+        <button onclick="lastDay()" style="width:25%">Jordbävningar senaste 24 timmarna</button>
+        <button onclick="lastHour()" style="width:25%">Jordbävningar senaste timmen</button>
+    </div>
+    
+    <!--Div som innehåller kartan-->
+    <div id="map" class="mainmap"></div>
+
+    <!--Kod för att lägga till kartan-->
+    <script src="addMap.js"></script>
+    
+    <!--Kod för att lägga till jordbävningar-->
+    <script src="addEarthquakes.js"></script>
+
+</body>
+</html>
+
