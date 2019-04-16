@@ -12,6 +12,8 @@ $page_title = "Startsida";
 
     <title><?= $site_title . $divider . $page_title; ?></title>
     <meta charset="utf-8">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet"/>
     <link rel="stylesheet" href="stilmall.css" type="text/css">
 </head>
 
@@ -24,52 +26,26 @@ $page_title = "Startsida";
 
             <li class="navigation" style="float:right"><a href="omOss.php">Om oss</a></li>
         </ul>
-
-        <h1> Jordbävningskarta </h1>
-
-        <div id="hemBox">
-            <div id ="hemText">
-                <h2 > Information  </h2>
-                <p> ----------------</p> 
-                <p> ----------------</p>
-                <br>
-                <hr>
-                <h2> Information </h2>
-                <p> ----------------</p>
-                <p> ---------------- </p>
-                <br>
-                <hr>
-                <h2> Information </h2>
-                <p> ----------------</p>
-                <p> ---------------- </p>
-            </div>
-        </div>
-
     </div>
 
+<!--Div som innehåller sidans banner(titel)-->
+    <div class="banner"></div>
+    <!--Div som innehåller knapparna(menyn)-->
+    <div class="btn-group" style="width:100%">
+        <button onclick="allMonth()" style="width:25%">Jordbävningar senaste 30 dagarna</button>
+        <button onclick="lastWeek()" style="width:25%">Jordbävningar senaste 7 dagarna</button>
+        <button onclick="lastDay()" style="width:25%">Jordbävningar senaste 24 timmarna</button>
+        <button onclick="lastHour()" style="width:25%">Jordbävningar senaste timmen</button>
+    </div>
+    
+    <!--Div som innehåller kartan-->
+    <div id="map" class="mainmap"></div>
 
-<div id="karta" ></div>
-
-<script> 
-
-function myMap() {
-    var restuarang1 = new google.maps.LatLng(62.391647,17.301855);
-	var restuarang2 = new google.maps.LatLng(62.388795,17.308801);
-    var marker1 = new google.maps.Marker({position:restuarang1});
-	var marker2 = new google.maps.Marker({position:restuarang2});
-	marker1.setMap(map);
-	marker2.setMap(map);
-    var mapProp= {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    };
-    var map = new google.maps.Map(document.getElementById("karta"),mapProp);
-}
-
-</script>
-
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4wvlWB-8fGprqkqCXvYYaS3fx8M8teNY&callback=myMap"></script>
-
+    <!--Kod för att lägga till kartan-->
+    <script src="addMap.js"></script>
+    
+    <!--Kod för att lägga till jordbävningar-->
+    <script src="addEarthquakes.js"></script>
+</body>
 <?php
 include("footer.php");

@@ -1,242 +1,279 @@
 body {
-    margin: 0;
-    padding: 0;
-    color: black;
-	width: 100%;
-	font-family: 'Marvel', sans-serif;
-	background-image: url("bakgrund2.jpg");
+	margin: 0;
+	padding: 0;
+	color: black;
+width: 100%;
+font-family: 'Marvel', sans-serif;
+background-image: url("bakgrund2.jpg");
 }
 
 #startpage {
-	margin-top: 150px;
-	padding-left: 20px;
-	width: 100%;
-	text-align: center;
+margin-top: 150px;
+padding-left: 20px;
+width: 100%;
+text-align: center;
 }
 
 #info {
-	margin: auto;
-	width: 500px;
+margin: auto;
+width: 500px;
 }
 
 #info fieldset { 
-	background-color: 	#A9A9A9;
-	margin-top: 80px;
-	width: 500px; 
-	padding: 20px 0px 20px 50px; 
-	border: 1px solid #778899;
-	cursor: text; 
+background-color: 	#A9A9A9;
+margin-top: 80px;
+width: 500px; 
+padding: 20px 0px 20px 50px; 
+border: 1px solid #778899;
+cursor: text; 
 }
 
 h1 {
-	font-size: 100px;
-	padding: 10px;
-	font-family: georgia;
-	text-align: center;
-	text-transform: uppercase; 
-	color: rgb(255, 255, 255);
-	font-family: Impact, 'Arial Narrow Bold', sans-serif;
+font-size: 100px;
+padding: 10px;
+font-family: georgia;
+text-align: center;
+text-transform: uppercase; 
+color: rgb(255, 255, 255);
+font-family: Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 #mainheader {
-	width: 100%;
-	padding: 20px;
-	background-color:	#4682B4;
+width: 100%;
+padding: 20px;
+background-color:	#4682B4;
 }
 
 #infoheader {
-	background-color: 	#778899;
-	width: 100%;
-	padding: 20px;
+background-color: 	#778899;
+width: 100%;
+padding: 20px;
 }
 
 a:hover {
-    background-color: #D3D3D3;
+	background-color: #D3D3D3;
 }
 a:link {
-	color: green;
-	text-decoration: none;
-	text-align: center;
+color: green;
+text-decoration: none;
+text-align: center;
 }
 
 a:visited {
-    color: #ff9999;
+	color: #ff9999;
 }
 
 #mainmenu .tablink {
-    background-color:#808080;
-	color: rgb(223, 199, 199);
-	padding-top: 15px;
-	padding-bottom: 15px;
-    left: 0;
-    top: 0;
-    width: 33.33%;
+	background-color:#808080;
+color: rgb(223, 199, 199);
+padding-top: 15px;
+padding-bottom: 15px;
+	left: 0;
+	top: 0;
+	width: 33.33%;
 }
 
 #mainmenu .tablink:hover {
-    background-color: #777;
+	background-color: #777;
 }
 
 input {
-	padding: 12px 20px;
+padding: 12px 20px;
 }
 
 input:focus {
-    background-color: #c2c2ff;
+	background-color: #c2c2ff;
 }
 
 #mainfooter {
-	position: fixed;
-	bottom: 0;
-	height: 60px;
-	width: 100%;
-	background-color: #333;
-	margin: 0px;
-	text-align: center;
-	border-top: 2px solid rgb(255, 0, 0);
-	color: rgb(255, 255, 255);
+position: fixed;
+bottom: 0;
+height: 60px;
+width: 100%;
+background-color: #333;
+margin: 0px;
+text-align: center;
+border-top: 2px solid rgb(255, 0, 0);
+color: rgb(255, 255, 255);
 }
 
 #navBar {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #333;
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
-  }
-  
-.navigation {
-	float: left;
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #333;
+position: -webkit-sticky; /* Safari */
+position: sticky;
+top: 0;
 }
-  
-.navigation a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 20px;
-	text-decoration: none;
-	font-size: 17px;
-  }
-  
-.navigation a:hover {
-	background-color: rgb(255, 0, 0);
-  }
 
-  .active {
-	background-color: rgb(255, 0, 0);
-  }
+.navigation {
+float: left;
+}
+
+.navigation a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 20px;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navigation a:hover {
+background-color: rgb(255, 0, 0);
+}
+
+.active {
+background-color: rgb(255, 0, 0);
+}
 
 #meny{
-	background-color: 	#333;
-	margin-top: 80px;
-	width: 500px; 
-	border: 2px solid rgb(255, 0, 0);
-	opacity: 0.7;
-	display: block;
-	position: absolute;
-	bottom: 80px;
-	left: 64%;
-	height: 790px;
+background-color: 	#333;
+margin-top: 80px;
+width: 500px; 
+border: 2px solid rgb(255, 0, 0);
+opacity: 0.7;
+display: block;
+position: absolute;
+bottom: 80px;
+left: 64%;
+height: 790px;
 }
 #menyText{
-	cursor: text;
-	color: white;
-    margin-left: 2%;
+cursor: text;
+color: white;
+	margin-left: 2%;
 }
 
 #kartBox{
-	background-color: 	#333;
-	margin-top: 80px;
-	width: 300px; 
-	border: 2px solid rgb(255, 0, 0);
-	opacity: 0.7;
-	display: block;
-	position: absolute;
-	bottom: 190px;
-	left: 2%;
-	height: 460px;	
+background-color: 	#333;
+margin-top: 80px;
+width: 300px; 
+border: 2px solid rgb(255, 0, 0);
+opacity: 0.7;
+display: block;
+position: absolute;
+bottom: 190px;
+left: 2%;
+height: 460px;	
 }
 
 #karta {
-	width: 70%;
-	height: 600px;
-	margin-top: 1%;
-	margin-right: 2%;
-	margin-bottom: 10px;
-	float: right;
+width: 70%;
+height: 600px;
+margin-top: 1%;
+margin-right: 2%;
+margin-bottom: 10px;
+float: right;
 }
 
 #kartText{
-	color: white;
-    float:left;
-    width: 100%;
-    margin-top: 5%;
-    margin-left: 2%; 
-    text-align: center;
-	margin-bottom: 25%;
+color: white;
+	float:left;
+	width: 100%;
+	margin-top: 5%;
+	margin-left: 2%; 
+	text-align: center;
+margin-bottom: 25%;
 } 
 
 
 #hemBox{
-	background-color: 	#333;
-	margin-top: 80px;
-	width: 20%; 
-	border: 2px solid rgb(255, 0, 0);
-	opacity: 0.7;
-	display: block;
-	position: absolute;
-	bottom: 20%;
-	left: 5%;
-	height: 50%;	
+background-color: 	#333;
+margin-top: 80px;
+width: 20%; 
+border: 2px solid rgb(255, 0, 0);
+opacity: 0.7;
+display: block;
+position: absolute;
+bottom: 20%;
+left: 5%;
+height: 50%;	
 }
 
 #hemText{
-	color: white;
-    float:left;
-    width: 100%;
-    margin-top: 5%;
-    text-align: center;
-	margin-bottom: 20%;
+color: white;
+	float:left;
+	width: 100%;
+	margin-top: 5%;
+	text-align: center;
+margin-bottom: 20%;
 }
 hr { 
-	display: block;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 25%;
-	margin-right: 24.5%;
-	border-style: inset;
-	border-width: 2px;
-	border: 2px solid rgb(255, 0, 0);
-  }
+display: block;
+margin-top: 0.5em;
+margin-bottom: 0.5em;
+margin-left: 25%;
+margin-right: 24.5%;
+border-style: inset;
+border-width: 2px;
+border: 2px solid rgb(255, 0, 0);
+}
 
 #player { 
-	margin-right: 20%;
-	float: right;
+margin-right: 20%;
+float: right;
 }
 
 #omOssBox{
-	background-color: 	#333;
-	margin-top: 80px;
-	width: 90%; 
-	border: 2px solid rgb(255, 0, 0);
-	opacity: 0.7;
-	display: block;
-	position: absolute;
-	bottom: 20%;
-	left: 5%;
-	height: 50%;	
+background-color: 	#333;
+margin-top: 80px;
+width: 90%; 
+border: 2px solid rgb(255, 0, 0);
+opacity: 0.7;
+display: block;
+position: absolute;
+bottom: 20%;
+left: 5%;
+height: 50%;	
 }
 
 ol li {
-  padding: 5px;
-	margin-left: 35px;
-	color: rgb(255, 255, 255);
-	
+padding: 5px;
+margin-left: 35px;
+color: rgb(255, 255, 255);
+
 }
 
 ol {
-  padding: 20px;
+padding: 20px;
+}
+.mainmap {
+width: 100%;
+height: 82.2%;
+position: absolute;
+bottom: 0;
+}
+
+.banner {
+background-color: #222;
+height: 10%;
+width: 100%;
+color: white;
+font-size: 500%;
+text-align: center;
+}
+
+/* Menyns utseende */
+.btn-group button {
+background-color: #222; /* Bakgrund */
+border: 1px solid red; /* Färg på border */
+color: red; /* Färg på texten */
+padding: 10px 24px;
+cursor: pointer;
+float: left;
+height: 15%;
+font-size: 200%;
+}
+
+/* Tar bort dubbla borders */
+.btn-group button:not(:last-child) {
+border-right: none;
+}
+
+/* Fär när man har musen över knappen */
+.btn-group button:hover {
+background-color: #111;
 }
