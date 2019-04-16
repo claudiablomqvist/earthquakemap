@@ -18,7 +18,7 @@
 .btn-group button {
     background-color: #222; /* Bakgrund */
     border: 1px solid red; /* Färg på border */
-    color: white; /* Färg på texten */
+    color: red; /* Färg på texten */
     padding: 10px 24px;
     cursor: pointer;
     float: left;
