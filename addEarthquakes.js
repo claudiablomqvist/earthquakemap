@@ -3,15 +3,15 @@
 function allMonth() {
     
     //Kollar om det finns några gamla lager/källor kvar, om så är fallet tar vi bort dom innan vi lägger dit det nya.
-    if (map.getSource("earthquake") != null){
-        map.removeLayer("earthquake");
-        map.removeSource("earthquake");
+    if (karta.getSource("earthquake") != null){
+        karta.removeLayer("earthquake");
+        karta.removeSource("earthquake");
     }
     
     //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. Vi döper källan till
     //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. 
     
-    map.addSource('earthquake', {
+    karta.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson'
     });
@@ -19,7 +19,7 @@ function allMonth() {
     
     //Lägger till cirklar som representerar datan vi anropr i addSource. 
     
-    map.addLayer({
+    karta.addLayer({
         'id': 'earthquake', //Ger den samma id som addSource (valfritt)
         'type': 'circle', //Typ av representation för data vi har i vårt geojson objekt (i detta fall jordbävningar)
         'source': 'earthquake', //Här länkar vi till addSource med namn "earthquake"
@@ -55,14 +55,14 @@ function allMonth() {
 function lastWeek() {
 
     //Kollar om det finns några gamla lager/källor kvar, om så är fallet tar vi bort dom innan vi lägger dit det nya.
-    if (map.getSource("earthquake") != null){
-        map.removeLayer("earthquake");
-        map.removeSource("earthquake");
+    if (karta.getSource("earthquake") != null){
+        karta.removeLayer("earthquake");
+        karta.removeSource("earthquake");
     }
 
     //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. Vi döper källan till
     //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. 
-    map.addSource('earthquake', {
+    karta.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson'
     });
@@ -70,7 +70,7 @@ function lastWeek() {
     
     //Lägger till cirklar som representerar datan vi anropr i addSource. Se dokumentet jag bifogat för en länk
     //Med info om just denna funktion.
-    map.addLayer({
+    karta.addLayer({
         'id': 'earthquake', //Ger den samma id som addSource (valfritt)
         'type': 'circle', //Typ av representation för data vi har i vårt geojson objekt (i detta fall jordbävningar)
         'source': 'earthquake', //Här länkar vi till addSource med namn "earthquake"
@@ -106,14 +106,14 @@ function lastWeek() {
 function lastDay() {
 
     //Kollar om det finns några gamla lager/källor kvar, om så är fallet tar vi bort dom innan vi lägger dit det nya.
-    if (map.getSource("earthquake") != null){
-        map.removeLayer("earthquake");
-        map.removeSource("earthquake");
+    if (karta.getSource("earthquake") != null){
+        karta.removeLayer("earthquake");
+        karta.removeSource("earthquake");
     }
 
     //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. 
     //Detta id används sen i map.addLayer för att anropa rätt källa. 
-    map.addSource('earthquake', {
+    karta.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson'
     });
@@ -121,7 +121,7 @@ function lastDay() {
     
     //Lägger till cirklar som representerar datan vi anropr i addSource. 
     //Med info om just denna funktion.
-    map.addLayer({
+    karta.addLayer({
         'id': 'earthquake', //Ger den samma id som addSource (valfritt)
         'type': 'circle', //Typ av representation för data vi har i vårt geojson objekt (i detta fall jordbävningar)
         'source': 'earthquake', //Här länkar vi till addSource med namn "earthquake"
@@ -157,21 +157,21 @@ function lastDay() {
 function lastHour() {
 
     //Kollar om det finns några gamla lager/källor kvar, om så är fallet tar vi bort dom innan vi lägger dit det nya.
-    if (map.getSource("earthquake") != null){
-        map.removeLayer("earthquake");
-        map.removeSource("earthquake");
+    if (karta.getSource("earthquake") != null){
+        karta.removeLayer("earthquake");
+        karta.removeSource("earthquake");
     }
 
     //Skapar ett geojson källa där vi specifierar typ geojson och länkar till data. Vi döper källan till
     //earthquake. Detta id används sen i map.addLayer för att anropa rätt källa. 
-    map.addSource('earthquake', {
+    karta.addSource('earthquake', {
         'type': 'geojson',
         'data': 'https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_hour.geojson'
     });
     
     
     //Lägger till cirklar som representerar datan vi anropr i addSource. 
-    map.addLayer({
+    karta.addLayer({
         'id': 'earthquake', //Ger den samma id som addSource (valfritt)
         'type': 'circle', //Typ av representation för data vi har i vårt geojson objekt (i detta fall jordbävningar)
         'source': 'earthquake', //Här länkar vi till addSource med namn "earthquake"
