@@ -12,7 +12,7 @@ $page_title = "Startsida";
 
     <title><?= $site_title . $divider . $page_title; ?></title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/stilmall.css" type="text/css">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
 </head>
 
 <body>
@@ -72,4 +72,4 @@ function myMap() {
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4wvlWB-8fGprqkqCXvYYaS3fx8M8teNY&callback=myMap"></script>
 
 <?php
-include("includes/footer.php");
+include("footer.php");

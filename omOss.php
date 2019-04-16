@@ -12,7 +12,7 @@ $page_title = "Startsida";
 
     <title><?= $site_title . $divider . $page_title; ?></title>
     <meta charset="utf-8"> 
-    <link rel="stylesheet" href="css/stilmall.css" type="text/css">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
 </head>
 
 <body>
@@ -42,4 +42,4 @@ $page_title = "Startsida";
 
     </div>
 <?php
-include("includes/footer.php");
+include("footer.php");

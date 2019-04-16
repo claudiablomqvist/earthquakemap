@@ -4,7 +4,7 @@
 
     <title><?= $site_title . $divider . $page_title; ?></title>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/stilmall.css" type="text/css">
+    <link rel="stylesheet" href="stilmall.css" type="text/css">
 </head>
 <body>
     <div id="container"> 
@@ -81,22 +81,7 @@
     player.stopVideo();
   }
 </script>
-<!--
-<div id ="kartText">
-<h2 style = "margin-left:50%"> Richterskalan </h2>
-<p> Information... </p>
-<p> 1: Går ej att känna</p>
-<p> 2: Går att känna, men svårt. Inga skador på hus</p>
-<p> 3: Börjar skaka och kan kännas</p>
-<p> 4: Skaningarna är kännbara</p>
-<p> 5: Skada på dåligt konstruerade hus kan ske</p>
-<p> 6: Allvarliga skador på hus kan se </p>
-<p> 7: Många hus kan kollapsa</p>
-<p> 8: kan orsaka mycket allvarliga skador, de flesta hur rasar </p>
-<p> 9: Allt går sönder</p>
-</div>
--->
 <?php
 
-include("includes/footer.php");
+include("footer.php");
 
