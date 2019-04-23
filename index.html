@@ -25,13 +25,15 @@
 <!--Div som innehåller sidans banner(titel)-->
     <div class="banner"></div>
     <!--Div som innehåller knapparna(menyn)-->
-    <div class="btn-group" style="width:65%; float: right">
+    <div class="btn-group" style="width:72%; float: right">
         <button onclick="allMonth()" style="width:25%">Jordbävningar senaste 30 dagarna</button>
         <button onclick="lastWeek()" style="width:25%">Jordbävningar senaste 7 dagarna</button>
         <button onclick="lastDay()" style="width:25%">Jordbävningar senaste 24 timmarna</button>
         <button onclick="lastHour()" style="width:25%">Jordbävningar senaste 60 minuterna</button>
+        <p id="hi"></p>
+
     </div>
-    
+
     <!--Div som innehåller kartan-->
     <div id="karta" class="mainmap"></div>
 
@@ -41,13 +43,20 @@
     <!--Kod för att lägga till jordbävningar-->
     <script src="addEarthquakes.js"></script>
 
+<div id="news"></div>
     <script src="p5.js" type="text/javascript"></script>
     <script src="p5.dom.js" type="text/javascript"></script>
     <script src="p5.sound.js" type="text/javascript"></script>
+    <script id="news" src="sketch.js" type="text/javascript"></script>
 
-    <script src="sketch.js" type="text/javascript"></script>
 
     <footer id="mainfooter">
             <p>DT159G - Projekt - Grupp 10</p>
         </footer><!-- /mainfooter -->
 </body>
+
+<!--<script>
+        window.onload()=function hi(){
+            document.getElementById("hi").innerHTML="hej";
+        };
+        </script>
