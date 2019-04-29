@@ -302,14 +302,17 @@ padding: 20px;
 #graf {
 	border: 1px solid rgb(255, 0, 0);
 	float: right;
-  width: 72%;
-	height: 30%;
-	margin-bottom: 10%;
+  width: 1040px;
+	height: 420px;
+	bottom: 100px;
 
 }
 /*width: 1040px;
 height: 420px;
 bottom: 100px;
+width: 72%;
+	height: 30%;
+	margin-bottom: 10%;
 
 /*#news {
 	border: 1px solid red;
