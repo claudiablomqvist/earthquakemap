@@ -234,7 +234,8 @@ hr {
 	margin-right: 9%;
 	float: right;
 	width: 45%;
-  height: 390;
+	height: 390;
+		border: 2px solid rgb(255, 0, 0);
 
 }
 
@@ -264,6 +265,7 @@ padding: 20px;
 	width: 72%;
 	height: 70%;
 	float: right;
+
 }
 
 .banner {

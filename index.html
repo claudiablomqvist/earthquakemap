@@ -9,6 +9,28 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet"/>
     <link rel="stylesheet" href="stilmall.css" type="text/css">
+
+	<title>PlottTest</title>
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script>
+		function loadDoc() {
+			var xhttp = new XMLHttpRequest();
+		
+			xhttp.onreadystatechange = function()
+			{
+				if (this.readyState == 4 && this.status == 200)
+				{
+					var data = JSON.parse(this.responseText);
+					Plotly.newPlot('graf', data, {
+					margin: { t: 200 } } ); 
+				}
+			};
+		
+			xhttp.open("GET", "plotDataPHP_REST.php", true);
+			// xhttp.open("POST", "plotDataPHP_REST.php", true);
+			xhttp.send();
+        }
+    </script>
 </head>
 
 <body>
@@ -25,7 +47,7 @@
 <!--Div som innehåller sidans banner(titel)-->
     <div class="banner"></div>
     <!--Div som innehåller knapparna(menyn)-->
-    <div class="btn-group" style="width:72%; float: right">
+    <div class="btn-group" style="width:72%; float: right;">
         <button onclick="allMonth()" style="width:25%">Jordbävningar senaste 30 dagarna</button>
         <button onclick="lastWeek()" style="width:25%">Jordbävningar senaste 7 dagarna</button>
         <button onclick="lastDay()" style="width:25%">Jordbävningar senaste 24 timmarna</button>
@@ -53,6 +75,13 @@
     <footer id="mainfooter">
             <p>DT159G - Projekt - Grupp 10</p>
         </footer><!-- /mainfooter -->
+        
+<div id="graf" style="width: 1400px; height: 600px;"><!-- Plotly ritas här --></div>
+
+
+
+<button type="button" onclick="loadDoc()">Ladda om</button>
+
 </body>
 
 <!--<script>
