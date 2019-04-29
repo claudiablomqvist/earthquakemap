@@ -1,7 +1,8 @@
-//var canvas;
+var canvas;
 var headline;
 var snippet;
 var pub_date;
+
 //var h1; 
 //var news;
 //var button;
@@ -12,7 +13,10 @@ var pub_date;
 var url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=earthquake magnitude&api-key=pdtETB6thaJpQaS6gGiEM64mj6c8vdTh';
 
 function setup() {
-noCanvas();
+  canvas = createCanvas(400, 1250);
+  canvas.position(0, 0);
+  canvas.style('z-index', '-1');
+
 //canvas = createCanvas(displayWidth - 400, displayHeight * 2);
 //canvas.position(400,0);
 //button = createButton("Show news");
@@ -25,24 +29,29 @@ loadJSON(url, gotData);
 //earthquake = createP("earthquake!");
 //earthquake.mouseOver(overpara);
 //earthquake.mouseOut(outpara);
+//paragraphs = select(snippet);
+
 }
 
 function gotData(data) {
 //background(0)
 
 var articles = data.response.docs;
-for (var i = 0; i < articles.length; i++){
+for (var i = 0; i < 5; i++){
 headline = createElement('h2', articles[i].headline.main);
-headline.size(350,85);
+headline.size(400,85);
 snippet = createP(articles[i].snippet);
-snippet.size(350,85);
+snippet.size(350,68);
 pub_date = createP(articles[i].pub_date);
+ 
+
 
 
 }
 
-//}
+
 }
+
 
 //}
 
@@ -59,7 +68,8 @@ pub_date = createP(articles[i].pub_date);
 //}
 
 function draw (){
-//background(0);
+background(151);
+
 //fill(255, 0, 0);
 
 //ellipse(x, y, slider.value(), slider.value());

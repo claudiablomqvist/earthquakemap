@@ -299,13 +299,13 @@ padding: 20px;
 	background-color: #111;
 }
 
-#news {
-	border: 1px solid red;
-	background-color: 	#333;
-	opacity: 0.8;	
-	color: white;
-	float: left;
-  width: 27.78%;
-  height: 650px;
-  overflow: scroll;
-}
+//#news {
+	//border: 1px solid red;
+	//background-color: 	#333;
+	//opacity: 0.8;	
+	//color: white;
+	//float: left;
+  //width: 27.78%;
+  //height: 650px;
+ // overflow: scroll;
+//}
