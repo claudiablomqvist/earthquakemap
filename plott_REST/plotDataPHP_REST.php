@@ -1,6 +1,6 @@
 <?php
 	// Länk till nedladdade REST-biblioteket, lagt i mappem biblo i överordnad katalog.
-	include('../biblo/httpful.phar');
+	include('biblo/httpful.phar');
 
 	// Hämta datat
 	// http://öppnadata.se/dataset/kommunkoder
