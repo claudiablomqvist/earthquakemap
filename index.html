@@ -9,8 +9,7 @@
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet"/>
     <link rel="stylesheet" href="stilmall.css" type="text/css">
-
-	<title>PlottTest</title>
+    <title>PlottTest</title>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script>
 		function loadDoc() {
@@ -29,8 +28,10 @@
 			xhttp.open("GET", "plotDataPHP_REST.php", true);
 			// xhttp.open("POST", "plotDataPHP_REST.php", true);
 			xhttp.send();
-        }
-    </script>
+		}
+		
+
+	</script>
 </head>
 
 <body>
@@ -65,27 +66,16 @@
     <!--Kod för att lägga till jordbävningar-->
     <script src="addEarthquakes.js"></script>
 
-<div id="news">
     <script src="p5.js" type="text/javascript"></script>
     <script src="p5.dom.js" type="text/javascript"></script>
     <script src="p5.sound.js" type="text/javascript"></script>
     <script src="sketch.js" type="text/javascript"></script>
-</div>
 
     <footer id="mainfooter">
             <p>DT159G - Projekt - Grupp 10</p>
         </footer><!-- /mainfooter -->
-        
-<div id="graf" style="width: 1400px; height: 600px;"><!-- Plotly ritas här --></div>
 
-
-
-<button type="button" onclick="loadDoc()">Ladda om</button>
-
+    <div id="graf"><!-- Plotly ritas här --></div>
+    <button type="button" onclick="loadDoc()">Ladda om</button>
+    
 </body>
-
-<!--<script>
-        window.onload()=function hi(){
-            document.getElementById("hi").innerHTML="hej";
-        };
-        </script>

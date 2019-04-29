@@ -299,13 +299,25 @@ padding: 20px;
 	background-color: #111;
 }
 
-//#news {
-	//border: 1px solid red;
-	//background-color: 	#333;
-	//opacity: 0.8;	
-	//color: white;
-	//float: left;
-  //width: 27.78%;
-  //height: 650px;
- // overflow: scroll;
-//}
+#graf {
+	border: 1px solid rgb(255, 0, 0);
+	float: right;
+  width: 72%;
+	height: 30%;
+	margin-bottom: 10%;
+
+}
+/*width: 1040px;
+height: 420px;
+bottom: 100px;
+
+/*#news {
+	border: 1px solid red;
+	background-color: 	#333;
+	opacity: 0.8;	
+	color: white;
+	float: left;
+  width: 27.78%;
+  height: 650px;
+  overflow: scroll;
+}
