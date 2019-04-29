@@ -37,7 +37,7 @@ function allMonth() {
             'circle-color': { //Färgen skiftar mellan gul--->röd 
                 'property': 'mag', //Porperty mag bestämmer att det är storleken som bestämmar färgen.
                 'stops': [
-                [0, 'red'], //Storlek 0 är gul
+                [0, 'yellow'], //Storlek 0 är gul
                 [6, 'red'] //Storlek 6 är röd 
                 ]
             },
