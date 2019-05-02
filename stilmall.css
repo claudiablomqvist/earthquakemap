@@ -209,7 +209,7 @@ margin-bottom: 2%;
 	float: left;
 	bottom: 13%;
 	margin-left: 5%;
-	height: 350;	
+	height: 340;	
 	box-sizing: border-box;
 	}
 
@@ -235,7 +235,7 @@ hr {
 	float: right;
 	width: 45%;
 	height: 390;
-		border: 2px solid rgb(255, 0, 0);
+	border: 2px solid rgb(255, 0, 0);
 
 }
 
