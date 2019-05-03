@@ -2,20 +2,27 @@ var canvas;
 var headline;
 var snippet;
 var pub_date;
+//var x = 750;
+//var y = 700;
 
-//var h1; 
+//var h2; 
 //var news;
 //var button;
 //var slider;
 //var earthquake;
 //var img;
 
-var url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=earthquake magnitude&api-key=pdtETB6thaJpQaS6gGiEM64mj6c8vdTh';
+var url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=earthquake quake magnitude &api-key=pdtETB6thaJpQaS6gGiEM64mj6c8vdTh';
 
 function setup() {
-  canvas = createCanvas(400, 1250);
+  canvas = createCanvas(425, 1280);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
+   //h2 = createElement('h2', 'Most significant Earthquakes of the month');
+   //h2.style("background-color","prink");
+   
+   
+  
 
 //canvas = createCanvas(displayWidth - 400, displayHeight * 2);
 //canvas.position(400,0);
@@ -41,7 +48,7 @@ for (var i = 0; i < 5; i++){
 headline = createElement('h2', articles[i].headline.main);
 headline.size(400,85);
 snippet = createP(articles[i].snippet);
-snippet.size(350,68);
+snippet.size(420,80);
 pub_date = createP(articles[i].pub_date);
  
 
@@ -68,7 +75,11 @@ pub_date = createP(articles[i].pub_date);
 //}
 
 function draw (){
-background(151);
+background(150);
+h2.position(x , y);
+x = x + random(-0.12,0.12);
+y = y + random(-0.12,0.12);
+
 
 //fill(255, 0, 0);
 
@@ -78,3 +89,4 @@ background(151);
 
 //text("eartquake",x , y - 50);
 }
+
