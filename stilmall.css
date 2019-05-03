@@ -88,7 +88,7 @@ input:focus {
 #mainfooter {
 position: fixed;
 bottom: 0;
-height: 60px;
+height: 40px;
 width: 100%;
 background-color: #333;
 margin: 0px;
@@ -163,8 +163,8 @@ height: 460px;
 
 #karta {
 width: 72%;
-height: 652px;
-margin-bottom: 10px;
+height: 600px;
+margin-bottom: 0px;
 float: right;
 }
 
@@ -302,9 +302,9 @@ padding: 20px;
 #graf {
 	border: 1px solid rgb(255, 0, 0);
 	float: right;
-  width: 1040px;
-	height: 420px;
-	bottom: 100px;
+  width: 1092px;
+	height: 547px;
+	
 
 }
 /*
