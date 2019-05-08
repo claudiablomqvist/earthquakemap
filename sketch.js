@@ -15,7 +15,7 @@ var pub_date;
 var url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=earthquake quake magnitude &api-key=pdtETB6thaJpQaS6gGiEM64mj6c8vdTh';
 
 function setup() {
-  canvas = createCanvas(425, 1280);
+  canvas = createCanvas(windowWidth, windowHeight*2.3);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
    //h2 = createElement('h2', 'Most significant Earthquakes of the month');
@@ -44,11 +44,11 @@ function gotData(data) {
 //background(0)
 
 var articles = data.response.docs;
-for (var i = 0; i < 5; i++){
+for (var i = 0; i < 6; i++){
 headline = createElement('h2', articles[i].headline.main);
-headline.size(400,85);
+headline.size(400,100);
 snippet = createP(articles[i].snippet);
-snippet.size(420,80);
+snippet.size(400,95);
 pub_date = createP(articles[i].pub_date);
  
 
@@ -79,6 +79,11 @@ background(150);
 h2.position(x , y);
 x = x + random(-0.12,0.12);
 y = y + random(-0.12,0.12);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight*2.3);
+}
 
 
 //fill(255, 0, 0);
@@ -88,5 +93,6 @@ y = y + random(-0.12,0.12);
 //y = y + random(-0.1,0.1);
 
 //text("eartquake",x , y - 50);
-}
+
+
 
