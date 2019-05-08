@@ -168,6 +168,18 @@ margin-bottom: 0px;
 float: right;
 }
 
+#bild {
+	width: 15%;
+	height: 15%;
+	float: right;
+	background-color: #D3D3D3;
+	position: relative;
+	z-index: 99;
+	border: 1px solid red;
+	margin-right: 1%;
+	margin-top: 1%;
+	}
+
 #kartText{
 color: white;
 	float:left;

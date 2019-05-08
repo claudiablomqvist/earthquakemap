@@ -4,7 +4,7 @@
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $site_title . $divider . $page_title; ?></title>
+    <title>Jordbävningskarta</title>
     <meta charset="utf-8">
     <script src="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js"></script>
     <link href="https://api.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css" rel="stylesheet"/>
@@ -57,7 +57,10 @@
     </div>
 
     <!--Div som innehåller kartan-->
-    <div id="karta" class="mainmap"></div>
+    <div id="karta" class="mainmap">
+        <div id="bild"></div>
+
+    </div>
 	<div class="btn-group" style="width:72%; float: right;">
 	<button onclick="loadDoc()" style="width:100%">Load Most Signifikant Earthquakes of the Month</button>
         <p id="hi"></p>
