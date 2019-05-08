@@ -95,4 +95,3 @@ function windowResized() {
 //text("eartquake",x , y - 50);
 
 
-

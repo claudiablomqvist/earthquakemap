@@ -4,7 +4,7 @@ body {
 	color: black;
 width: 100%;
 font-family: 'Marvel', sans-serif;
-
+background-image: url("bakgrund2.jpg");
 }
 
 #startpage {
@@ -163,10 +163,22 @@ height: 460px;
 
 #karta {
 width: 72%;
-height: 600px;
+height: 1000px;
 margin-bottom: 0px;
 float: right;
 }
+
+#bild {
+	width: 15%;
+	height: 15%;
+	float: right;
+	background-color: #D3D3D3;
+	position: relative;
+	z-index: 99;
+	border: 1px solid red;
+	margin-right: 1%;
+	margin-top: 1%;
+	}
 
 #kartText{
 color: white;
