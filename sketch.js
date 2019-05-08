@@ -15,7 +15,7 @@ var pub_date;
 var url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=earthquake quake magnitude &api-key=pdtETB6thaJpQaS6gGiEM64mj6c8vdTh';
 
 function setup() {
-  canvas = createCanvas(425, 1280);
+  canvas = createCanvas(425%, 1280);
   canvas.position(0, 0);
   canvas.style('z-index', '-1');
    //h2 = createElement('h2', 'Most significant Earthquakes of the month');
