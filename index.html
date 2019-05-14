@@ -13,22 +13,22 @@
 	<script>
 		function loadDoc() {
 			var xhttp = new XMLHttpRequest();
-		
+
 			xhttp.onreadystatechange = function()
 			{
 				if (this.readyState == 4 && this.status == 200)
 				{
 					var data = JSON.parse(this.responseText);
 					Plotly.newPlot('graf', data, {
-					margin: { t: 50 } } ); 
+					margin: { t: 50 } } );
 				}
 			};
-		
+
 			xhttp.open("GET", "plotDataPHP_REST.php", true);
 			// xhttp.open("POST", "plotDataPHP_REST.php", true);
 			xhttp.send();
 		}
-		
+
 
 	</script>
 </head>
@@ -58,19 +58,19 @@
 
     <!--Div som innehåller kartan-->
     <div id="karta" class="mainmap">
-        <div id="bild">Hej hej :)</div>
+        <div id="bild"><img src="Images/60201680_2353142468125965_8160150812555739136_nO.jpg" alt="Testbild" width="143" height="107"/>
 
     </div>
 	<div class="btn-group" style="width:72%; float: right;">
 	<button onclick="loadDoc()" style="width:100%">Load Most Signifikant Earthquakes of the Month</button>
         <p id="hi"></p>
 	</div>
-	
+
 	<div id="graf"><!-- Plotly ritas här --></div>
 
     <!--Kod för att lägga till kartan-->
     <script src="addMap.js"></script>
-    
+
     <!--Kod för att lägga till jordbävningar-->
     <script src="addEarthquakes.js"></script>
 
@@ -84,5 +84,5 @@
  </footer><!-- /mainfooter -->
 
 
-    
+
 </body>
